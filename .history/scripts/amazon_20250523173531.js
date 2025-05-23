@@ -1,11 +1,15 @@
 import {cart, addToCart} from '../data/cart.js';
-// import * as cartModule from '../data/cart.js';
-// cartModule.cart
-// cartModule.addToCart('id');
+import * as cartModule from '../data/cart.js';
+cartModule.cart
+cartModule.addToCart('id')
 
 import {products} from '../data/products.js';
 
+
+
 let productsHTML ='';
+
+
 products.forEach((product)=>{
     productsHTML+=`
         <div class="product-container">
@@ -57,19 +61,28 @@ products.forEach((product)=>{
             Add to Cart
           </button>
         </div>
-        `;    
+        `;
+     
 });
  
-document.querySelector('.js-products-grid').innerHTML=productsHTML;
+document.querySelector('.js-products-grid')
+.innerHTML=productsHTML;
+
+ 
+
 
 function updateCartQuantity(){
  let cartQuantity=0;
+
      cart.forEach((cartItem)=>{
       cartQuantity+=cartItem.quantity;
   });
+
      document.querySelector('.js-cart-quantity') 
      .innerHTML=cartQuantity;
 }
+
+
 
 document.querySelectorAll('.js-add-to-cart')
 .forEach((button)=>{

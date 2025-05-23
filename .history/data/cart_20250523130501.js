@@ -1,6 +1,6 @@
 export  const cart=[];
 
-export function addToCart(productId){
+function addToCart(productId){
      let matchingItem;
 
      cart.forEach((cartItem)=>{
