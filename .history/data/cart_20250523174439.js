@@ -1,5 +1,9 @@
- export  const cart=[];
-function addToCart(productId){
+export  const cart=[{
+   productId:'e43638ce-6aa0-4b85-b27f-e1d07eb678c6',
+   quantity 
+}];
+
+export function addToCart(productId){
      let matchingItem;
 
      cart.forEach((cartItem)=>{
