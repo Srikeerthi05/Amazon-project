@@ -156,9 +156,5 @@ function renderOrderSummary(){
     element.addEventListener('click',()=>{
       const {productId,deliveryOptionId}=element.dataset
       updateDeliveryOption(productId,deliveryOptionId);
-      renderOrderSummary();
-    });
-  });
-}
-
-renderOrderSummary();
+    })
+  })
