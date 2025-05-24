@@ -148,7 +148,7 @@ document.querySelectorAll('.js-delete-link')
 document.querySelectorAll('.js-delivery-option')
 .forEach((element)=>{
   element.addEventListener('click',()=>{
-    const {productId,deliveryOptionId}=element.dataset
+    const {product}=element.dataset
     updateDeliveryOption(productId,deliveryOptionId);
   })
 })

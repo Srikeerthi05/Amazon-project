@@ -63,7 +63,7 @@ export function updateDeliveryOption(productID, deliveryOptionId){
     let matchingItem;
 
      cart.forEach((cartItem)=>{
-      if(productID===cartItem.productId){
+      if(productI===cartItem.productId){
         matchingItem=cartItem;
       }
      }); 
