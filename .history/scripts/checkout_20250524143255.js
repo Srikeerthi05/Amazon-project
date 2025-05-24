@@ -106,9 +106,7 @@ document.querySelectorAll('.js-delete-link')
        removeFromCart(productId);
        console.log(cart);
 
-       const container=document.querySelector(
+       document.querySelector(
         `.js-cart-item-container-${productId}` 
-       );
-       container.remove();
     });
 });
