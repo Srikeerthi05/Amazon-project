@@ -138,7 +138,7 @@ export function renderOrderSummary(){
         );
         container.remove();
 
-        renderPaymentSummary();
+        renderOrderSummary
       });
   });
 
@@ -148,7 +148,6 @@ export function renderOrderSummary(){
       const {productId,deliveryOptionId}=element.dataset
       updateDeliveryOption(productId,deliveryOptionId);
       renderOrderSummary();
-      renderPaymentSummary();
     });
   });
 }
