@@ -1,7 +1,6 @@
-export let cart;
+export let
 
-loadFromStorage()
-export function loadFromStorage(){
+function loadFromStorage(){
 
      cart=JSON.parse(localStorage.getItem('cart'));
 
@@ -34,7 +33,7 @@ export function addToCart(productId){
       if(productId===cartItem.productId){
         matchingItem=cartItem;
       }
-     });;
+     });
      if(matchingItem){
       matchingItem.quantity+=1;
      }
