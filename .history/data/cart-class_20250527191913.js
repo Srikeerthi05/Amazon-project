@@ -4,10 +4,10 @@ cartItem ;
 
 constructor(localStorageKey){
     this.#localStorageKey=localStorageKey;
-    this.#loadFromStorage();
+    this.loadFromStorage();
      
 }
-  #loadFromStorage(){
+  loadFromStorag (){
         this.cartItems=JSON.parse(localStorage.getItem(this.#localStorageKey));
         if(!this.cartItems){
             this.cartItems= [
@@ -85,4 +85,24 @@ const businessCart=new Cart('cart-business');
 
 console.log(cart);
 console.log(businessCart);
+
+
+
+
+
+
+
+
+ 
+
+
+ 
+
+
+
+ 
+
+
+ 
+
   

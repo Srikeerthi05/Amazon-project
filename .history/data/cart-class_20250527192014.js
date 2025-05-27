@@ -4,7 +4,7 @@ cartItem ;
 
 constructor(localStorageKey){
     this.#localStorageKey=localStorageKey;
-    this.#loadFromStorage();
+    this.loadFromStorage();
      
 }
   #loadFromStorage(){
@@ -85,4 +85,24 @@ const businessCart=new Cart('cart-business');
 
 console.log(cart);
 console.log(businessCart);
+
+
+
+
+
+
+
+
+ 
+
+
+ 
+
+
+
+ 
+
+
+ 
+
   
