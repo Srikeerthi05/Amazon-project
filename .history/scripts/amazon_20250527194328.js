@@ -3,7 +3,7 @@ import {cart, addToCart} from '../data/cart.js';
 // cartModule.cart
 // cartModule.addToCart('id');
 
-import {products,Product} from '../data/products.js';
+import {products,Pro} from '../data/products.js';
 import { formatCurrency } from './utils/money.js';
 
 let productsHTML ='';

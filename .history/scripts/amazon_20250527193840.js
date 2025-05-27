@@ -3,7 +3,7 @@ import {cart, addToCart} from '../data/cart.js';
 // cartModule.cart
 // cartModule.addToCart('id');
 
-import {products,Product} from '../data/products.js';
+import {products} from '../data/products.js';
 import { formatCurrency } from './utils/money.js';
 
 let productsHTML ='';
@@ -21,14 +21,14 @@ products.forEach((product)=>{
 
           <div class="product-rating-container">
             <img class="product-rating-stars"
-              src="${product.getStarsUrl()}">
+              src="${">
             <div class="product-rating-count link-primary">
               ${product.rating.count}
             </div>
           </div>
 
           <div class="product-price">
-           ${product.getPrice()}
+            $${formatCurrency(product.priceCents)}
           </div>
 
           <div class="product-quantity-container">
