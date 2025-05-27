@@ -46,7 +46,7 @@ products.forEach((product)=>{
             </select>
           </div>
 
-          ${product.extraInfoHTML()}
+          ${product.ex}
 
           <div class="product-spacer"></div>
 

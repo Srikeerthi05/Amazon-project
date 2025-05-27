@@ -52,9 +52,9 @@ class Clothing extends Product{
       // super.extraInfoHTML();
       return `
       <a href="${this.sizeChartLink}" target="_blank_">Size chart</a>
-      `;
-    }
-} 
+     
+
+
 export const products = [
   {
     id: "e43638ce-6aa0-4b85-b27f-e1d07eb678c6",
