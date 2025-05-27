@@ -65,10 +65,7 @@ class Clothing extends Product{
 //   b:this.a;
 //  }
 
-// function logThis(){
-//   console.log(this);
-// }
-// logThis();
+fucntion
 
 export const products = [
   {
