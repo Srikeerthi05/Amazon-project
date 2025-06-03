@@ -9,7 +9,7 @@ describe('test suite: renderOrderSummary',()=>{
         loadProductsFetch().then(()=>{
             done();
         });
-        
+       
        
        });
    beforeEach(()=>{
