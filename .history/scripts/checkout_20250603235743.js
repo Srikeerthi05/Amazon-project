@@ -5,30 +5,6 @@ import { loadCart } from '../data/cart.js';
 // import '../data/cart-class.js' ;
 // import '../data/backend-practice.js';
 
-async function loadPage(){
-     try{
-        // throw 'error1';
-
-        await loadProductsFetch();
-
-        const value=await new Promise((resolve,reject)=>{
-            loadCart(()=>{
-                reject('error3');
-                // resolve('value3')
-            });
-        });
-     }catch(error) {
-        console.log('error ,try again ');
-
-     }
-     renderOrderSummary();
-     renderPaymentSummary();
-
-}
-loadPage().then(()=>{
-    console.log('next step');
-});
-
 Promise.all([
     loadProductsFetch(),
     new Promise((resolve)=>{

@@ -6,28 +6,10 @@ import { loadCart } from '../data/cart.js';
 // import '../data/backend-practice.js';
 
 async function loadPage(){
-     try{
-        // throw 'error1';
-
-        await loadProductsFetch();
-
-        const value=await new Promise((resolve,reject)=>{
-            loadCart(()=>{
-                reject('error3');
-                // resolve('value3')
-            });
-        });
-     }catch(error) {
-        console.log('error ,try again ');
-
-     }
-     renderOrderSummary();
-     renderPaymentSummary();
+    console.log('load page');
 
 }
-loadPage().then(()=>{
-    console.log('next step');
-});
+loadPage().then()
 
 Promise.all([
     loadProductsFetch(),

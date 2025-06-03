@@ -85,14 +85,13 @@ export function loadProductsFetch(){
   console.log('load products');
  
   }).catch(()=>{
-    console.log('error');
+    console.log('error')
   });
    return promise;
 }
-loadProductsFetch();
-// loadProductsFetch().then(()=>{
-//   console.log('next step');
-// });
+loadProductsFetch().then(()=>{
+  console.log('next step');
+});
 export function loadProducts(fun){
   const xhr= new XMLHttpRequest();
  

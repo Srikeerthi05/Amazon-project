@@ -89,10 +89,10 @@ export function loadProductsFetch(){
   });
    return promise;
 }
-loadProductsFetch();
-// loadProductsFetch().then(()=>{
-//   console.log('next step');
-// });
+loadProducts
+loadProductsFetch().then(()=>{
+  console.log('next step');
+});
 export function loadProducts(fun){
   const xhr= new XMLHttpRequest();
  
