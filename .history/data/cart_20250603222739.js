@@ -80,8 +80,13 @@ export function loadCart(fun){
   const xhr= new XMLHttpRequest();
  
    xhr.addEventListener('load',()=>{
-    
-  console.log(xhr.response);
+    products=JSON.parse(xhr.response).map((productDetails)=>{
+      if(productDetails.type==='clothing'){
+        return new Clothing(productDetails);
+      }
+      return new Product(productDetails);
+    });
+  console.log('load products');
   fun();
   });
 

@@ -17,34 +17,30 @@ Promise.all([
     });
     })
 
-]).then(()=>{
-    renderOrderSummary();
-   renderPaymentSummary();
-
-});
-// new Promise((resolve)=>{
-//     loadProducts(()=>{
+]).then();
+new Promise((resolve)=>{
+    loadProducts(()=>{
         
-//         resolve();
-//     });
+        resolve();
+    });
     
-// }).then(()=>{
-//     return new Promise((resolve)=>{
-//     loadCart(()=>{
-//         resolve();
-//     });
-//     })
+}).then(()=>{
+    return new Promise((resolve)=>{
+    loadCart(()=>{
+        resolve();
+    });
+    })
       
-// }).then(()=>{
-//       renderOrderSummary();
-//    renderPaymentSummary(); 
-// });
-// // loadProducts(()=>{
-// //     loadCart(()=>{
-// //          renderOrderSummary();
-// //     renderPaymentSummary(); 
-// //     })
+}).then(()=>{
+      renderOrderSummary();
+   renderPaymentSummary(); 
+});
+// loadProducts(()=>{
+//     loadCart(()=>{
+//          renderOrderSummary();
+//     renderPaymentSummary(); 
+//     })
     
-// // })
+// })
  
  
