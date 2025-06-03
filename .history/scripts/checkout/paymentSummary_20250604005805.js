@@ -75,8 +75,18 @@ export function renderPaymentSummary(){
     addOrder(order);
 
     }catch(error){
-      console.log('Unexpected error: Try again!')
+
     }
-    window.location.href='orders.html';
+    const response=await fetch('https://supersimplebackend.dev/orders',{
+      method:'POST',
+      headers:{
+        'Content-Type':'application/json'
+      },
+      body:JSON.stringify({
+        cart:cart
+      })
+    })
+    const order =await response.json();
+    addOrder(order);
   })
 }

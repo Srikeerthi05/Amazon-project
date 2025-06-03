@@ -77,6 +77,6 @@ export function renderPaymentSummary(){
     }catch(error){
       console.log('Unexpected error: Try again!')
     }
-    window.location.href='orders.html';
+ 
   })
 }
