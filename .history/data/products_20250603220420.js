@@ -71,7 +71,7 @@ class Clothing extends Product{
 // logThis();
 
 export let products=[];
-export function loadProducts(fun){
+export function loadProducts(){
   const xhr= new XMLHttpRequest();
  
    xhr.addEventListener('load',()=>{
@@ -82,7 +82,7 @@ export function loadProducts(fun){
       return new Product(productDetails);
     });
   console.log('load products');
-  fun();
+  
   });
 
 

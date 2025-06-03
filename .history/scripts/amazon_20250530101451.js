@@ -1,5 +1,4 @@
 import {cart, addToCart} from '../data/cart.js';
- 
 // import * as cartModule from '../data/cart.js';
 // cartModule.cart
 // cartModule.addToCart('id');
@@ -7,7 +6,7 @@ import {cart, addToCart} from '../data/cart.js';
 import {products,Product,loadProducts} from '../data/products.js';
 import { formatCurrency } from './utils/money.js';
 
-loadProducts(renderProductsGrid);
+loadProducts();
 function renderProductsGrid(){
   let productsHTML ='';
   products.forEach((product)=>{

@@ -1,5 +1,5 @@
 import {cart, addToCart} from '../data/cart.js';
- 
+import { loadProducts } from '../data/cart.js';
 // import * as cartModule from '../data/cart.js';
 // cartModule.cart
 // cartModule.addToCart('id');
